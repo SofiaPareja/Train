@@ -64,6 +64,8 @@ namespace ClassLibrary
         {
             this.Id = id;
             count += 1;
+            //Cantidad de objetos de la clase Train
+            Console.WriteLine($"Count: {count}");
         }
         
         public string Id
@@ -75,6 +77,7 @@ namespace ClassLibrary
         ~Train ()
         {
            count-=1;
+           Console.WriteLine($"Count: {count}");
         }
     }
 }
