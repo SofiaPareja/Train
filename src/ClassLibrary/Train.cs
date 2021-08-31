@@ -34,7 +34,7 @@ namespace ClassLibrary
             }
 
             this.IsEngineStarted = true;
-            Console.Write("Engines on");
+            Console.Write("Engines on ");
             return true;
         }
 
@@ -49,12 +49,32 @@ namespace ClassLibrary
             if (this.IsEngineStarted)
             {
                 this.IsEngineStarted = false;
-                Console.Write("Engines off");
+                Console.Write("Engines off ");
                 return true;
             }
 
             Console.Write("The engines are already stopped");
             return this.IsEngineStarted;
+        }
+        
+        private static int count = 0;
+        public string id;
+
+        public  Train(string id)
+        {
+            this.Id = id;
+            count += 1;
+        }
+        
+        public string Id
+        {
+            get {return id;}
+            set {this.id = value;}
+        }
+
+        ~Train ()
+        {
+           count-=1;
         }
     }
 }
