@@ -29,10 +29,11 @@ namespace ConsoleApplication
             Console.WriteLine($" t1==t2 --> {t1==t2}");
             Console.WriteLine($" t2==t3 --> {t2==t3}");
 
-           //for(int i=0; i<=100; i++)
-           //{
-              // Train train1 = new Train("100");
-          // }
+           for(int i=0; i<100; i++)
+           {
+               Train train1 = new Train("100");
+           }
+            Console.WriteLine(Train.Contador());
           //for (int i=0; i<=10000000; i++)
           //{
               //Train train2 = new Train("10.000.000");
