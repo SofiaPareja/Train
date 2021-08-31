@@ -68,7 +68,7 @@ namespace ClassLibrary
         
         public string Id
         {
-            get {return id;}
+            get {return this.Id;}
             set {this.id = value;}
         }
 
